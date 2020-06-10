@@ -23,8 +23,8 @@ steps:
   displayName: 'Run a multi-line script'
 - script: |
       echo ${{ variables.MyNameIs}} # outputs initialValue
-      echo $(one)
+      echo $(MyNameIs)
 - task: BatchScript@1
   inputs:
-    filename: 'c:\junk\xxx.bat'
+    filename: 'c:\junk\log.bat'
     arguments: 'arg1 arg2'
