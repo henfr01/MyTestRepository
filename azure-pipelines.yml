@@ -7,9 +7,6 @@ variables:
 - name: MyNameIs
   value: 'Fred The Owner'
 
-trigger:
-- master
-
 pool:
   vmImage: 'ubuntu-latest'
 
